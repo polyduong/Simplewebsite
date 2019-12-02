@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <p id="mycontent">Hello and welcome to Cloud Computing</p>
+
+        <p>Please give the pets you have in your house</p>
+        <ul id="mypetlist">
+            <li>For example, a dog</li>
+        </ul>
+        
+        <button type="button" onclick="myButtonClick()">Change Text</button>
+        
+        <button type="button" onclick="myParrot()">Add a Parrot</button>
+        <button type="button" onclick="myKitty()">Add a Kitty</button>
+        <button type="button" onclick="myPig()">Add a Pig</button>
+
+        <script>
+            // alert("Javascript is executed");
+
+            function myButtonClick(){
+            document.getElementById("mycontent").innerHTML = "The content is changed";
+            document.body.innerHTML += '<div>This is just created</div>';
+            }
+            
+            function myParrot(){
+            document.getElementById("mypetlist").innerHTML += "<li>Parrot</li>";
+            }
+
+            function myKitty(){
+            document.getElementById("mypetlist").innerHTML += "<li>Kitty</li>";    
+            }
+
+            function myPig(){
+            document.getElementById("mypetlist").innerHTML += "<li>Pig</li>";   
+            }
+        </script>
+    </body>
+</html>
